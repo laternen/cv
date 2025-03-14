@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Freigeist";
+    src: local ("Freigeist"),
+    url("../assets/font/Freigeist-Medium.woff2") format("woff2"),
+    url("../assets/font/Freigeist-Medium.woff") format("woff");
+    
+}
+
+@font-face {
+    font-family: "Freigeist";
+    src: local ("Freigeist"),
+    url("../assets/font/Freigeist-Bold.woff2") format("woff2"),
+    url("../assets/font/Freigeist-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Freigeist";
+    src: local ("Freigeist"),
+    url("../assets/font/Freigeist-MediumItalic.woff2") format("woff2"),
+    url("../assets/font/Freigeist-MediumItalic.woff") format("woff");
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Freigeist", "Arial", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F7F1E3;
+    font-size: 3.6rem;
+    color: #002432;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #002432;
+    font-style: italic;
+}
+
+/* шапка */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 100px;
+    gap: 1em;
+    align-items: center;
+    padding: 0.5em 2em;
+}
+
+.header_sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.header_socials {
+    display: flex;
+    gap: 1em; 
+}
+
+/* .header {
+    height: 12vh; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+     padding: 0 5vw;
+} */
+
+/* .header_sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+    width: 50%;
+    font-size: 3.2rem;
+} */
+
+.header_sections-item {
+    font-style: normal;
+}
+
+.header_sections-item:hover {
+    color: #8f8f8f;
+}
+
+/* .header_socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10vw;
+    gap: 1.5rem;
+} */
+
+
+
+/* главная */
+.greetings {
+    display: flex;
+    justify-content: space-between;
+    height: 88vh;
+    width: 100%;
+    background-color: #002432;
+    color: #F7F1E3;
+}
+
+.greetings_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    width: 50%;
+    height: 100%;
+    margin-left: 5vw;
+    padding: 5vw;
+}
+
+.greetings_header {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.greetings_description {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.greetings_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-right: 5vw;
+}
+
+.greetings_img {
+    display: block;
+    border: solid 1rem;
+    border-radius: 10%;
+    width: 65%;
+}
+
+/* обо мне */
+.about {
+    position: relative;
+    height: 100vh;
+    background-image: 
+    url("../assets/images/grafics/scope__1.svg"),
+    url("../assets/images/grafics/scope__2.svg"),
+    url("../assets/images/grafics/scope__3.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    /* background-size: 40%, 45%, 45%; */
+    background-position: 0 -10%, -5% 250%, 100% 140%;
+    transform: none, rotate(180deg), none;
+}
+
+
+
+.about_item {
+    display: block;
+    position: absolute;
+    color: #F7F1E3;
+    text-align: center;
+    font-size: 36px;
+}
+#first {
+    width: 240px;
+    top: 50px; 
+    left: 200px;
+}
+
+#second {
+    width: 330px;
+    top: 300px;
+    left: 950px;
+}
+
+#third {
+    width: 330px;
+    top: 450px;
+    left: 90px;
+    font-size: 34px;
+}
+
+
+/* опыт */
+.experience {
+    height: 100vh;
+    background-color: #EE7828;
+    color: #002432;
+}
+
+
+/* навыки */
+.skills {
+    height: 100vh;
+    color: #002432;
+}
+
+
+/* подвал */
+footer {
+    background-color: #002432;
+    color: #F7F1E3;
+}
+
