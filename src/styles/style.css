@@ -244,6 +244,10 @@ button {
     padding: 40px; 
 }
 
+.experience_screen-link {
+    margin-top: 35px;
+    color: #F7F1E3;
+}
 /* навыки */
 .skills {
     height: 100vh;
