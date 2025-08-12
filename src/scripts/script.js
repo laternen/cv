@@ -12,13 +12,22 @@ const links = [
     'https://monkeytype.com/'
 ]
 
+const headers = [
+    'Стилеру',
+    'Экстра',
+    'АПО',
+    'Четвертая стена'
+]
+
 const textbox = document.querySelector('.experience_screen-text')
 const buttons = document.querySelectorAll('.experience_list-item')
 const exampleLink = document.querySelector('.experience_screen-link')
+const header = document.querySelector('.experience_screen-header')
 
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
+    buttons[i].addEventListener('mouseover', function() {
         textbox.textContent = texts[i];
         exampleLink.src = links[i];
+        header.textContent = headers[i];
     })
 }

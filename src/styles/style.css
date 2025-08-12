@@ -62,57 +62,43 @@ button {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     min-width: 100px;
-    gap: 1em;
-    align-items: center;
-    padding: 0.5em 2em;
+    padding: 15px 90px;
+    gap: 50px;
 }
 
 .header_sections {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 100px;
+
+}
+
+.header_sections-item {
+    display: block;
+    font-size: 34px; 
 }
 
 .header_socials {
     display: flex;
-    gap: 1em; 
+    gap: 0.6em; 
 }
 
-/* .header {
-    height: 12vh; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-     padding: 0 5vw;
-} */
+.header_socials-item svg:hover {
+    fill: #576574;
+}
 
-/* .header_sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2vw;
-    width: 50%;
-    font-size: 3.2rem;
-} */
 
 .header_sections-item {
     font-style: normal;
 }
 
 .header_sections-item:hover {
-    color: #8f8f8f;
+    color: #576574;
 }
 
-/* .header_socials {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 10vw;
-    gap: 1.5rem;
-} */
 
 
 
@@ -121,7 +107,6 @@ button {
     display: flex;
     justify-content: space-between;
     height: 88vh;
-    width: 100%;
     background-color: #002432;
     color: #F7F1E3;
 }
@@ -217,47 +202,117 @@ button {
     height: 100vh;
     background-color: #EE7828;
     color: #002432;
+    padding: 30px; 
+}
+
+.experience h2 {
+    width: fit-content;
+    margin: 0 auto 40px auto;
 }
 
 .experience_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
     margin-top: 30px;
 }
 
+.experience_list {
+    display: grid;
+    grid-template-columns: 80px;
+    gap: 15px;
+}
 .experience_list-item {
-    box-sizing: border-box;
+    width: 90px;
+    height: 70px;
     appearance: none;
-    border: solid 2px transparent;
-    border-radius: 10px;
+    border: solid 3px transparent;
+    border-radius: 15px;
     background: #002432;
     color: #F7F1E3;
-    padding: 10px 20px;
+    padding: 5px;
     font-size: 32px;
 }
 .experience_list-item:hover {
-    border: solid 2px #F7F1E3;
+    border: solid 3px #F7F1E3;
 }
 
 .experience_screen {
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #002432;
     color: #F7F1E3;
-    padding: 40px; 
+    border-radius: 20px;
+    width: 60%;
+    height: auto;
+    padding: 25px 40px; 
+    font-size: 28px;
 }
 
-.experience_screen-link {
-    margin-top: 35px;
-    color: #F7F1E3;
+.experience_screen h3 {
+    margin-bottom: 50px;
+    font-size: 44px;
+} 
+
+.experience_screen-text {
+    text-align: center;
 }
+
+.experience_screen-link  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #F7F1E3;
+    border-radius: 40px;
+    color: #002432;
+    font-size: 24px;
+}
+
+
 /* навыки */
 .skills {
     height: 100vh;
     color: #002432;
 }
 
+.skills_list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 30px;
+    margin: auto;
+    padding: 30px;
+}
+
+.skills_list-item div {
+    min-height: 220px;
+    border: 3px solid #002432;
+    border-left: 50px solid #002432;
+    border-radius: 15px;
+}
 
 /* подвал */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100px;
+    padding: 0.5em 2em;
     background-color: #002432;
     color: #F7F1E3;
 }
 
+.footer_socials_list {
+    display: flex;
+    gap: 0.6em;
+}
+
+
+.footer_socials_list-item svg:hover {
+    fill: #8a897c;
+}
